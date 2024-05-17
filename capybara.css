@@ -1,0 +1,757 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+ 
+	font-family:Arial, sans-serif;
+	background-color: #e6f8fc;
+}
+
+header { 
+	background-color: #c4d5ff;
+	padding: px;
+	background-image: url(images/logonotext.png);
+	background-repeat: no-repeat;
+	background-size: 195.75px 143.5px;
+	background-position: top;
+	background-position: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+header a:link {
+	text-decoration: none;
+	color: #000000;
+}
+
+header a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+header a:hover {
+	text-decoration: none;
+	color: #7f96dd;
+}
+
+h1 {
+	text-decoration: none;
+	text-align: center;
+	font-size: 75px;
+}
+
+h2 {
+	text-decoration: none;
+	font-size: 36px;
+	margin-left: 0px;
+	text-align: center;
+}
+
+h3 {
+	text-decoration: none;
+	font-size: 36px;
+	margin-left: 0px;
+	text-align: center;
+}
+nav {
+	float: left;
+	/*width: 300px;*/
+	display: block;
+	background-image: linear-gradient(#bdaec8, #FFFFFF);
+	/*height: 848px;*/
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+
+
+nav a:link {
+	color: #000000;
+}
+
+nav a:visited {
+	color: #000000;
+}
+
+nav a:hover {
+	color: #7f96dd;
+}
+nav a {
+	text-decoration: none;
+	font-size: 36px;
+	
+}
+
+nav ul {
+	list-style-type: none;
+	padding-right: 3em;
+}
+
+main {
+	display: block;
+	background-color: #FFFFFF;
+	/*margin-left: 250px; */
+}	
+
+
+footer {
+	text-align: center;
+	display: block;
+	clear: both;
+	background-color: #FFFFFF;
+	/*height: 180px;
+	padding-top: 100px;
+	margin: auto;
+	width: 1700px;*/
+}
+
+
+#wrapper {
+	width: 90%; 
+	margin-left:auto; 
+	margin-right:auto; 
+	/*min-width: 1000px; 
+	max-width: 2000px;  */
+	/*height: 1300px;*/
+	background-color: #FFFFFF;
+}
+
+#homepage {
+	background-image: url(images/capybara.png);
+	background-size: 0% 0%;
+	background-repeat: no-repeat;
+	/*margin-left: 100px;*/
+}
+
+
+#home2 {
+	background-image: url(images/general2.png);
+	background-size: 300px 200px;
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	width: 300px;
+	height: 200px;
+	margin: auto;
+}
+
+	
+
+p {
+	font-size: 20px;
+}
+
+section {
+	width: 100%;
+	display: block;
+	font-size: 30px;
+	text-align: center; 
+	/*height: 420px;*/
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#diet {
+	display: box;
+	padding: 10px;
+	height: 190px;
+	width: 300px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #CCFFCC;
+	margin-left: 35px;
+}
+
+#dietpic {
+	background-image: url(images/capybaraeating.jpg);
+	background-size: 300px 200px;
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	margin-left: 35px;
+	margin-top: 300px;
+
+}
+
+#habitat {
+	display: box;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #CCFFCC;
+	margin-left: 35px;
+}
+
+table {
+	height: 500px;
+	width: 250px;
+	margin: auto;
+}
+
+tr {
+	font-size: 12px;
+	padding: 0px;
+	background-color: #e9f7e9;
+}
+
+tr:nth-of-type(even) {
+	background-color: #CCFFCC;
+}
+
+td, th {
+	text-align: center;
+	padding: 10px;
+}
+
+#tableheader {
+	margin-top: 30px;
+	text-decoration: none;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#tablecaption {
+	font-size: 20px;
+	width: 300px;
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 25px;
+	padding-left: 1em;
+	width: 50%;
+	font-size: 25px;
+	margin-top: 50px;
+}
+	
+input[type="submit"] {
+	width: 75px;
+	height: 25px;
+	margin-top: 10px;
+}
+
+input {
+	font-size: 10px;
+}
+
+textarea {
+	font-size: 10px;
+}
+
+fieldset {
+	background-color: #CCFFCC;
+}
+
+
+@media (max-width: 599px) {
+	
+	nav {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	header {
+		display: flex;
+		flex-direction: column;
+		background-image: none;
+	}
+	
+	#description {
+		display: none;
+	}
+	
+	#behavior {
+		display: none;
+	}
+	
+	video {
+		display: none;
+	}
+}
+
+
+@media (min-width: 600px) {
+	main {
+		margin-left: 0px;
+		padding-left: 2em; 
+		padding-right: 10em; 
+	}
+	
+	#behavior {
+		display: none;
+	}
+	section {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	float: right;
+	padding-top: 200px;
+	
+	}
+	
+	#description {
+		display: none;
+	}
+	
+	#homepage {
+		margin-left: 350px;
+		padding-top: 400px;
+		height: 200px;
+		background-size: 300px 200px;
+		width: 300px;
+	}
+	
+	nav {
+		height: 800px;
+		border-bottom: none;
+		width: 300px;
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	
+	#home2 {
+		margin-left: 350px;
+		height: 200px;
+		background-size: 300px 200px;
+		width: 300px;
+		margin-top: 155px;
+	}
+	
+	footer {
+		height: auto;
+		padding-top: 50px;
+		margin: 80;	
+	}
+	
+	#dietpic {
+		margin-left: 350px;
+		margin-top: 30px;
+		height: 200px;
+		background-size: 300px 200px;
+		width: 300px;
+	}
+	
+	#diet {
+	height: 180px;
+	width: 450px;
+	margin-left: 310px;
+	font-size: 21px;
+	}
+	
+	#habitat {
+	height: 180px;
+	width: 450px;
+	margin-left: 310px;
+	font-size: 22px;
+	}
+	
+	table {
+		margin-top: 50px;
+		margin-left: 300px;
+		width: 400px;
+		margin-bottom: 100px;
+		display: block;
+	}
+
+	tr {
+		font-size: 20px;
+		background-color: #e9f7e9;
+	}
+
+	tr:nth-of-type(even) {
+		background-color: #CCFFCC;
+	}
+
+	td, th {
+		padding: 5px;
+		text-align: center;
+	}
+	
+	#tableheader {
+	margin-top: 30px;
+	text-decoration: none;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 400px;
+	}
+
+	#tablecaption {
+		font-size: 20px;
+		width: 500px;
+		text-align: center;
+		margin-left: 280px;
+		margin-top: 50px;
+		padding-bottom: 0px;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-left: 240px;
+		padding-left: 0.5em;
+		width: 40%;
+		font-size: 25px;
+		margin-top: 50px;
+}
+	
+	input[type="submit"] {
+		width: 150px;
+		height: 50px;
+		margin-top: 25px;
+		font-size: 20px;
+	}
+
+	input {
+		font-size: 20px;
+	}
+
+	textarea {
+		font-size: 20px;
+	}
+	
+	video {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+		main {
+		display;
+	}
+	
+	#description {
+		display: none;
+	}
+	
+	#behavior {
+		display: none;
+	}
+	
+	section {
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		float: right;
+		padding-top: 200px;
+	}
+	
+	#homepage {
+		margin-left: 450px;
+		padding-top: 400px;
+		height: 200px;
+		background-size: 600px 400px;
+		width: 600px;
+	
+	}
+	
+	section {
+		margin-top: 200px;
+		padding-right: 3em;
+
+	}
+	nav {
+		height: 800px;
+		border-bottom: none;
+		width: 300px;
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	
+	#home2 {
+		margin-left: 450px;
+		height: 200px;
+		background-size: 600px 400px;
+		width: 600px;
+		height: 400px;
+		margin-top: 250px;
+	}
+	
+	footer {
+		height: auto;
+		padding-top: 50px;
+		margin: auto;
+		width: 80%;
+			
+	}
+	
+	#dietpic {
+		margin-left: 450px;
+		margin-top: 30px;
+		height: 400px;
+		background-size: 600px 400px;
+		width: 600px;
+	}
+	
+	#diet {
+		height: 180px;
+		width: 600px;
+		margin-left: 450px;
+		font-size: 25px;
+	}
+	
+	#habitat {
+		height: 180px;
+		width: 600px;
+		margin-left: 450px;
+		font-size: 27px;
+	}
+	
+	table {
+		margin-top: 50px;
+		margin-left: 400px;
+		width: 900px;
+		margin-bottom: 100px;
+		display: block;
+	}
+
+	tr {
+		font-size: 20px;
+		height: 100px;
+		background-color: #e9f7e9;
+	}
+
+	tr:nth-of-type(even) {
+		background-color: #CCFFCC;
+	}
+
+	td, th {
+		padding: 5px;
+		text-align: center;
+	}
+	
+	#tableheader {
+		margin-top: 30px;
+		text-decoration: none;
+		font-size: 40px;
+		text-align: center;
+		font-weight: bold;
+		margin-left: 400px;
+	}
+
+	#tablecaption {
+		font-size: 20px;
+		width: 600px;
+		text-align: center;
+		margin-left: 400px;
+		margin-top: 50px;
+		padding-bottom: 0px;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-left: 450px;
+		padding-left: 0.5em;
+		width: 40%;
+		font-size: 25px;
+		margin-top: 50px;
+	}
+	
+	input[type="submit"] {
+		width: 150px;
+		height: 50px;
+		margin-top: 25px;
+		font-size: 20px;
+	}
+
+	input {
+		font-size: 20px;
+	}
+
+	textarea {
+		font-size: 20px;
+	}
+	
+	#wrapper {
+		width: 80%;
+	}
+	
+	h3 {
+		margin-left: 450px;
+	}
+	
+	video {
+		display: block;
+		margin-left: 450px;
+		margin-top: 30px;
+		height: 400px;
+		background-size: 600px 400px;
+		width: 600px;
+	}
+}
+
+
+@media (min-width: 1700px) {
+	main {
+ 
+	}
+	
+	#wrapper {
+		width: 80%;
+	}
+	
+	#description {
+		/* margin-left: 350px;*/
+		width: 400px;
+		font-size: 25px;
+		text-align: center;
+		display: block;
+		float: left;
+		padding: 30px;
+		margin-left: 25px;
+	}
+	
+	
+	section {
+
+		display: none;
+	}
+	
+	#homepage {
+		/*height: 400px;*/
+		background-size: 600px 400px;
+		width: 600px;
+		float: right;
+		margin: 0;
+		padding-bottom: 100px;
+
+	}
+	
+	nav {
+		height: 848px;
+		border-bottom: none;
+	}
+	
+	
+	#home2 {
+		height: 400px;
+		background-size: 600px 400px;
+		width: 600px;
+		float: right;
+		margin: 0;
+		padding: 20px;
+	}
+	
+	footer {
+		height: 180px;
+		padding-top: 100px;
+		margin: auto;
+		width: 1500px;	
+	}
+	
+	#dietpic {
+		margin-left: 550px;
+		margin-top: 50px;
+		height: 400px;
+		background-size: 600px 400px;
+		width: 600px;
+	}
+	
+	video {
+		margin-left: 550px;
+		margin-top: 50px;
+		height: 400px;
+		background-size: 600px 400px;
+		width: 600px;
+		display: block;
+	}
+	
+	#diet {
+		height: 190px;
+		width: 750px;
+		margin-left: 470px;
+		font-size: 30px;
+	}
+	
+	#habitat {
+		height: 190px;
+		width: 750px;
+		margin-left: 470px;
+		font-size: 30px;
+	}
+	
+	table {
+		margin-top: 100px;
+		height: 500px;
+		width: 1000px;
+		margin-left: 350px;
+	}
+
+	tr {
+		font-size: 30px;
+		background-color: #e9f7e9;
+	}
+
+	tr:nth-of-type(even) {
+		background-color: #CCFFCC;
+	}
+
+	td, th {
+		padding: 10px;
+		text-align: center;
+	}
+	
+	#tableheader {
+		margin-top: 30px;
+		text-decoration: none;
+		font-size: 60px;
+		text-align: center;
+		font-weight: bold;
+		margin-left: 120px;
+	}
+
+	#tablecaption {
+		font-size: 30px;
+		width: 1000px;
+		text-align: center;
+		margin-top: 50px;
+		padding-bottom: 0px;
+		margin-left: 300px;
+	}
+	
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-left: 450px;
+		padding-left: 1em;
+		width: 50%;
+		font-size: 25px;
+		margin-top: 50px;
+}
+	
+	input[type="submit"] {
+		width: 150px;
+		height: 50px;
+		margin-top: 25px;
+		font-size: 20px;
+	}
+
+	input {
+		font-size: 20px;
+	}
+
+	textarea {
+		font-size: 20px;
+	}
+	
+	h3 {
+		margin-left: 400px;
+	}
+	
+}
+
